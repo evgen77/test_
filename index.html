@@ -30,9 +30,9 @@
 				<!-- desktop navbar -->
 				<nav class="desktop-nav" style="width: 100%;">
 					<ul class="first-level">
-						<li><a href="/tea/index.html#pronas" class="animsition-link">Про нас</a></li>
-						<li><a href="/tea/index.html#spivpraca" class="animsition-link">Співпраця</a></li>
-						<li><a href="/tea/index.html#contact" class="animsition-link">Контакти</a></li>
+						<li><a href="#pronas" class="animsition-link">Про нас</a></li>
+						<li><a href="#spivpraca" class="animsition-link">Співпраця</a></li>
+						<li><a href="#contact" class="animsition-link">Контакти</a></li>
 						<li class="fl_f"><a class="animsition-link">UA</a></li>
 
 						<li class="fl_f"><a><img src="assets/img/Без имени-1.png" class="animsition-link" style="
@@ -74,7 +74,7 @@
     line-height: 20px;">
 						покликаний допомогти компаніям, що працюють у нафтогазовому секторі
 					</p>
-					<a href="/tea/index.html#pronas" class="btn first" style="text-align:center; margin-top:30px;"><span>ДЕТАЛЬНІШЕ</span></a>
+					<a href="#pronas" class="btn first" style="text-align:center; margin-top:30px;"><span>ДЕТАЛЬНІШЕ</span></a>
 				</div>
 
 				<div class="col-md-7 wow fadeInUp animated" data-wow-delay=".1s" style="    padding: 0px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
@@ -111,7 +111,7 @@
 					font-weight: 600;
 ">Якщо у вас є будь-які запитання, зв’яжіться з нами за формою
 					</p>
-					<a href="/tea/index.html#contact" class="btn green" style=""><span>Написать нам</span></a>
+					<a href="#contact" class="btn green" style=""><span>Написать нам</span></a>
 				</div>
 			</div>
 		</div>
@@ -346,44 +346,14 @@
 	<script type="text/javascript" src="assets/js/wow.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 
-<!--	<script type="text/javascript" charset="utf-8">-->
-<!--		$(window).load(function() {-->
-<!--			new WOW().init();-->
-
-<!--			// initialise flexslider-->
-<!--			$('.site-hero').flexslider({-->
-<!--				animation: "fade",-->
-<!--				directionNav: false,-->
-<!--				controlNav: false, -->
-<!--				keyboardNav: true,-->
-<!--				slideToStart: 0,-->
-<!--				animationLoop: true,-->
-<!--				pauseOnHover: false,-->
-<!--				slideshowSpeed: 4000, -->
-<!--			});-->
-
-
-<!--			// initialize isotope-->
-<!--			var $container = $('.portfolio_container');-->
-<!--			$container.isotope({-->
-<!--				filter: '*',-->
-<!--			});-->
-<!--		 -->
-<!--			$('.portfolio_filter a').click(function(){-->
-<!--				$('.portfolio_filter .active').removeClass('active');-->
-<!--				$(this).addClass('active');-->
-<!--		 -->
-<!--				var selector = $(this).attr('data-filter');-->
-<!--				$container.isotope({-->
-<!--					filter: selector,-->
-<!--					animationOptions: {-->
-<!--						duration: 500,-->
-<!--						animationEngine : "jquery"-->
-<!--					}-->
-<!--				});-->
-<!--				return false;-->
-<!--			}); -->
-<!--		});-->
-<!--	</script>-->
+	<script type="text/javascript" charset="utf-8">
+	$(function(){
+    $('a[href^="#"]').click(function(){
+       var target = $(this).attr('href');
+       $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+       return false;
+    });
+ });
+</script>
 </body>
 </html>
